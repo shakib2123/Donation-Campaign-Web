@@ -1,0 +1,122 @@
+[
+  {
+    "picture": "https://i.ibb.co/9hBJRZD/Health.png",
+    "title": "Promote Healthcare",
+    "category": "Health",
+    "category_bg_color": "#0052FF33",
+    "card_bg_color": "#0052FF26",
+    "text_button_bg_color": "#0052FF",
+    "description": "Contribute to healthcare projects in disadvantaged communities. Your support can make a significant impact on access to medical care, vaccinations, and health awareness programs. Help us improve the well-being of vulnerable populations by providing essential healthcare services and resources.",
+    "price": 290
+  },
+  {
+    "picture": "https://i.ibb.co/x7RmdRH/Education.png",
+    "title": "Good education",
+    "category": "Education",
+    "category_bg_color": "#FF444933",
+    "card_bg_color": "#FF444926",
+    "text_button_bg_color": "#FF444A",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+    "price": 240
+  },
+  {
+    "picture": "https://i.ibb.co/7z0yT3L/Clothing.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_bg_color": "#79C23333",
+    "card_bg_color": "#79C23D26",
+    "text_button_bg_color": "#79C23F",
+    "description": "Our clothing donation category is dedicated to providing clothing to those in need. Your support enables us to collect and distribute clean, gently-used clothing to individuals and families facing economic hardship or recovering from natural disasters. By donating to this cause, you help ensure that people have access to warm clothing during the cold months, professional attire for job interviews, and essentials for daily life. Your generosity not only offers physical comfort but also restores dignity and self-confidence to those going through difficult times. Join us in making a meaningful impact through clothing donations and helping those less fortunate in our communities.",
+    "price": 395
+  },
+  {
+    "picture": "https://i.ibb.co/b1M6H3T/Food.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "category_bg_color": "#F8714726",
+    "card_bg_color": "#F8714733",
+    "text_button_bg_color": "#F87147",
+    "description": " Our food donation initiative is committed to alleviating hunger and providing nourishment to individuals and families in need. Your support allows us to collect and distribute nutritious food to those facing food insecurity, whether due to economic challenges, natural disasters, or other hardships. By contributing to this cause, you help ensure that no one goes to bed hungry. Your generosity provides sustenance, comfort, and hope to those who are struggling to put food on their tables. Join us in the fight against hunger, and make a significant difference by donating to our food programs, because together, we can build stronger, healthier communities.",
+    "price": 199
+  },
+  {
+    "picture": "https://i.ibb.co/QMnGMNK/Environment.jpg",
+    "title": "Protect the Environment",
+    "category": "Environment",
+    "category_bg_color": "#90EE85",
+    "card_bg_color": "#90EE80",
+    "text_button_bg_color": "#990066",
+    "description": "This is the description for Product 5.",
+    "price": 24.99
+  },
+  {
+    "picture": "https://i.ibb.co/rbqpG5B/food.jpg",
+    "title": "Fight Hunger",
+    "category": "Hunger Relief",
+    "category_bg_color": "#FFD700",
+    "card_bg_color": "#FFD100",
+    "text_button_bg_color": "#3399FF",
+    "description": "Support initiatives to provide food for those in need. Your contributions can help feed hungry families and individuals, reducing food insecurity in communities around the world.",
+    "price": 149
+  },
+  {
+    "picture": "https://i.ibb.co/3rbJgvP/Animal-Welfare.jpg",
+    "title": "Product 7",
+    "category": "Sports & Outdoors",
+    "category_bg_color": "#FF3355",
+    "card_bg_color": "#FF3366",
+    "text_button_bg_color": "#00CC99",
+    "description": "This is the description for Product 7.",
+    "price": 34.99
+  },
+  {
+    "picture": "https://i.ibb.co/dLhb2x5/Arts-and-Culture.jpg",
+    "title": "Product 8",
+    "category": "Health & Wellness",
+    "category_bg_color": "#87CEEd",
+    "card_bg_color": "#87CEeB",
+    "text_button_bg_color": "#663399",
+    "description": "This is the description for Product 8.",
+    "price": 27.99
+  },
+  {
+    "picture": "https://i.ibb.co/sFYp3Wz/Clean-Water.jpg",
+    "title": "Provide Clean Water",
+    "category": "Clean Water",
+    "category_bg_color": "#CC3399",
+    "card_bg_color": "#CC3390",
+    "text_button_bg_color": "#FF5733",
+    "description": "This is the description for Product 9.",
+    "price": 59.99
+  },
+  {
+    "picture": "https://i.ibb.co/cy5f3st/Human-Rights.jpg",
+    "title": "Product 10",
+    "category": "Electronics",
+    "category_bg_color": "#00CED1",
+    "card_bg_color": "#00CED1",
+    "text_button_bg_color": "#333333",
+    "description": "This is the description for Product 10.",
+    "price": 49.99
+  },
+  {
+    "picture": "https://i.ibb.co/Hqrjs31/Cancer-Research.jpg",
+    "title": "Support Cancer Research",
+    "category": "Cancer Research",
+    "category_bg_color": "#55BB",
+    "card_bg_color": "#55BB",
+    "text_button_bg_color": "#bcca33",
+    "description": "Support research for the prevention and treatment of cancer. Your donations can fund groundbreaking research, early detection programs, and patient support services, offering hope to those battling cancer.",
+    "price": 299
+  },
+  {
+    "picture": "https://i.ibb.co/F5qQj26/Disaster-Relief.jpg",
+    "title": "Provide Disaster Aid",
+    "category": "Disaster Relief",
+    "category_bg_color": "#44C9",
+    "card_bg_color": "#44C9",
+    "text_button_bg_color": "#99FF",
+    "description": "Provide aid to communities affected by natural disasters. Your donations can help deliver essential supplies, provide emergency medical care, and offer relief to those impacted by hurricanes, earthquakes, floods, and other disasters. Together, we can provide hope and support in times of crisis.",
+    "price": 399
+  }
+]
