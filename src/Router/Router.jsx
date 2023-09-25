@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../components/Home/Home";
-import Donation from "../components/Donation/Donation";
+
 import AllDonations from "../components/AllDonations/AllDonations";
 import Statistics from "../components/Statistics/Statistics";
 import DonationDetails from "../components/DonationDetails/DonationDetails";
@@ -22,6 +22,7 @@ const customiseRouter = createBrowserRouter([
       },
       {
         path: "/statistics",
+        loader: () => fetch("/donation.json"),
         element: <Statistics></Statistics>,
       },
       {

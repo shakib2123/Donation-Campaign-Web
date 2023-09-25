@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import DonationsDetails from "../DonationDetails/DonationDetails";
 
 const Donation = ({ donation }) => {
   const {
@@ -34,7 +33,9 @@ const Donation = ({ donation }) => {
             >
               {category}
             </p>
-            <h2 style={cardStyle.textColor} className="card-title">{title}</h2>
+            <h2 style={cardStyle.textColor} className="card-title">
+              {title}
+            </h2>
           </div>
         </div>
       </div>

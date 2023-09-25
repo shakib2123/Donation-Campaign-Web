@@ -10,7 +10,6 @@ const AllDonations = () => {
       setDonations(allDonations);
     }
   }, []);
-  console.log(donations);
 
   return (
     <div>
@@ -28,14 +27,24 @@ const AllDonations = () => {
                 ></AllDonation>
               ))}
       </div>
-      <div className="flex justify-center my-6">
-        <button
-          onClick={() => setIsShow(!isShow)}
-          className="btn text-lg  text-white bg-[#009444] hover:bg-[#00cc5f]"
-        >
-          {!isShow ? "See All" : "See Less"}
-        </button>
-      </div>
+      {donations.length > 0 ? (
+        <div className="flex justify-center my-6">
+          {!isShow ? (
+            <button
+              onClick={() => setIsShow(!isShow)}
+              className="btn text-lg  text-white bg-[#009444] hover:bg-[#00cc5f]"
+            >
+              See All
+            </button>
+          ) : (
+            ""
+          )}
+        </div>
+      ) : (
+        <h1 className="text-4xl font-medium text-center">
+          Nothing donated by you.
+        </h1>
+      )}
     </div>
   );
 };
