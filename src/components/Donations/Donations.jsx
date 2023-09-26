@@ -22,11 +22,11 @@ const Donations = ({ donations }) => {
           setSearchedDonation(foundDonation);
         }
       } else {
+        setError("No donation found for the entered category.");
         setSearchedDonation(null);
       }
     }
   };
-
 
   return (
     <div>
@@ -66,7 +66,9 @@ const Donations = ({ donations }) => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto">
-        {error && <p className="text-red-500 text-center mt-2 text-xl">{error}</p>}
+        {error && (
+          <p className="text-red-500 text-center mt-2 text-xl">{error}</p>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-8 p-3">
           {searchedDonation !== null ? (
             <Donation key={searchedDonation.id} donation={searchedDonation} />
