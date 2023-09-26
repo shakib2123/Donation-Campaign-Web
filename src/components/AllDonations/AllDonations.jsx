@@ -12,8 +12,8 @@ const AllDonations = () => {
   }, []);
 
   return (
-    <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-3">
         {isShow
           ? donations.map((donation) => (
               <AllDonation key={donation.id} donation={donation}></AllDonation>
@@ -27,9 +27,10 @@ const AllDonations = () => {
                 ></AllDonation>
               ))}
       </div>
+
       {donations.length > 0 ? (
         <div className="flex justify-center my-6">
-          {!isShow ? (
+          {!isShow && donations.length > 4 ? (
             <button
               onClick={() => setIsShow(!isShow)}
               className="btn text-lg  text-white bg-[#009444] hover:bg-[#00cc5f]"
@@ -41,9 +42,11 @@ const AllDonations = () => {
           )}
         </div>
       ) : (
-        <h1 className="text-4xl font-medium text-center">
-          Nothing donated by you.
-        </h1>
+        <div className="flex justify-center items-center h-[80vh]">
+          <h1 className="text-center text-2xl md:text-4xl font-medium">
+            Nothing donated by you......
+          </h1>
+        </div>
       )}
     </div>
   );

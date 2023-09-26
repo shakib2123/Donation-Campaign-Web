@@ -22,10 +22,14 @@ const AllDonation = ({ donation }) => {
   return (
     <div
       style={cardStyle.backgroundColor}
-      className="md:flex items-center gap-8 rounded-lg"
+      className="md:flex items-center gap-8 rounded-lg p-2 md:p-0"
     >
-      <div className="h-56 w-56">
-        <img className="rounded-l-lg h-full w-full" src={picture} alt="" />
+      <div className="h-56 w-full md:w-56">
+        <img
+          className="rounded-l-lg h-full w-full"
+          src={picture}
+          alt=""
+        />
       </div>
       <div className="space-y-3">
         <p

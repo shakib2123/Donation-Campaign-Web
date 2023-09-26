@@ -6,6 +6,7 @@ import AllDonations from "../components/AllDonations/AllDonations";
 import Statistics from "../components/Statistics/Statistics";
 import DonationDetails from "../components/DonationDetails/DonationDetails";
 
+
 const customiseRouter = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,7 @@ const customiseRouter = createBrowserRouter([
         loader: () => fetch("/donation.json"),
         element: <DonationDetails></DonationDetails>,
       },
+     
     ],
   },
 ]);

@@ -62,12 +62,14 @@ const Statistics = () => {
         </PieChart>
       </div>
       <div className="my-10 max-w-xl mx-auto">
-        <div className="flex justify-between">
+        <div className="flex justify-between px-2">
           <p className="text-lg flex gap-5 items-center">
-            Your Donation <div className="w-24 h-4 bg-[#00C49F] rounded"></div>
+            Your Donation{" "}
+            <div className="w-12 md:w-24 h-4 bg-[#00C49F] rounded"></div>
           </p>
           <p className="text-lg flex gap-5 items-center">
-            Total Donation <div className="w-24 h-4 bg-[#FF444A] rounded"></div>
+            Total Donation{" "}
+            <div className="w-12 md:w-24 h-4 bg-[#FF444A] rounded"></div>
           </p>
         </div>
       </div>

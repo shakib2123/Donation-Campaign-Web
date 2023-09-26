@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import DonationDetail from "./DonationDetail";
 
 const DonationDetails = () => {
@@ -13,9 +13,11 @@ const DonationDetails = () => {
     setDonation(findDonation);
   }, [donations, idInt]);
 
-  return <div>
-    <DonationDetail donation={donation}></DonationDetail>
-  </div>;
+  return (
+    <div className="max-w-7xl mx-auto">
+      <DonationDetail donation={donation}></DonationDetail>
+    </div>
+  );
 };
 
 export default DonationDetails;
