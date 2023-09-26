@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AllDonation = ({ donation }) => {
   const {
     id,
@@ -25,11 +27,7 @@ const AllDonation = ({ donation }) => {
       className="md:flex items-center gap-8 rounded-lg p-2 md:p-0"
     >
       <div className="h-56 w-full md:w-56">
-        <img
-          className="rounded-l-lg h-full w-full"
-          src={picture}
-          alt=""
-        />
+        <img className="rounded-l-lg h-full w-full" src={picture} alt="" />
       </div>
       <div className="space-y-3">
         <p
@@ -42,12 +40,14 @@ const AllDonation = ({ donation }) => {
         <h3 style={cardStyle.textColor} className="text-xl font-medium">
           ${price}
         </h3>
-        <button
-          style={cardStyle.btnBg}
-          className="text-white rounded-lg px-6 py-3 font-medium text-xl"
-        >
-          View Details
-        </button>
+        <Link to={`/donation/${id}`}>
+          <button
+            style={cardStyle.btnBg}
+            className="text-white rounded-lg px-6 py-3 font-medium text-xl"
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
