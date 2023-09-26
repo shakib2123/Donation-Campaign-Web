@@ -73,6 +73,7 @@ const Donations = ({ donations }) => {
           {searchedDonation !== null ? (
             <Donation key={searchedDonation.id} donation={searchedDonation} />
           ) : (
+            !error &&
             donations.map((donation) => (
               <Donation key={donation.id} donation={donation} />
             ))
