@@ -3,30 +3,27 @@ import Donation from "../Donation/Donation";
 const Donations = ({ donations }) => {
   const [searchedDonation, setSearchedDonation] = useState(null);
   const [error, setError] = useState(null);
-  const handleSearch = () => {
-    const searchCategory = document.getElementById("input-field").value;
+const handleSearch = () => {
+  const searchCategory = document.getElementById("category-input").value;
 
-    if (searchCategory === "") {
-      setError("Please enter a category name for the search.");
-      setSearchedDonation(null);
+  if (searchCategory === "") {
+    setError("Please enter a category name for the search.");
+    setSearchedDonation(null);
+  } else {
+    const foundDonations = donations?.filter(
+      (donation) => donation.category === searchCategory
+    );
+
+    if (foundDonations.length > 0) {
+      setError(null);
+      setSearchedDonation(foundDonations);
     } else {
-      const foundDonation = donations?.find((donation) =>
-        donation.category.includes(searchCategory)
-      );
-
-      if (foundDonation) {
-        if (foundDonation.category !== searchCategory) {
-          setError("Searched category does not match found donation category.");
-        } else {
-          setError(null);
-          setSearchedDonation(foundDonation);
-        }
-      } else {
-        setError("No donation found for the entered category.");
-        setSearchedDonation(null);
-      }
+      setError("No donation found for the entered category.");
+      setSearchedDonation(null);
     }
-  };
+  }
+};
+
 
   return (
     <div>
@@ -48,7 +45,7 @@ const Donations = ({ donations }) => {
                 </h1>
                 <div className="join">
                   <input
-                    id="input-field"
+                    id="category-input"
                     className="input md:w-96 input-bordered text-black join-item"
                     placeholder="Search here...."
                   />
@@ -70,14 +67,14 @@ const Donations = ({ donations }) => {
           <p className="text-red-500 text-center mt-2 text-xl">{error}</p>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-8 p-3">
-          {searchedDonation !== null ? (
-            <Donation key={searchedDonation.id} donation={searchedDonation} />
-          ) : (
-            !error &&
-            donations.map((donation) => (
-              <Donation key={donation.id} donation={donation} />
-            ))
-          )}
+          {searchedDonation !== null
+            ? searchedDonation.map((donation) => (
+                <Donation key={donation.id} donation={donation} />
+              ))
+            : !error &&
+              donations.map((donation) => (
+                <Donation key={donation.id} donation={donation} />
+              ))}
         </div>
       </div>
     </div>
